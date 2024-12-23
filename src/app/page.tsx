@@ -1,15 +1,17 @@
-import { HeroSection } from '@/components/hero-section'
-import { ProjectShowcase } from '@/components/project-showcase'
-import { SkillsSection } from '@/components/skills-section'
-import { ContactForm } from '@/components/contact-form'
+import { HeroSection } from "@/components/hero-section"
+import { AboutSection } from "@/components/about-section"
+import { ProjectShowcase } from "@/components/project-showcase"
+import { SkillsSection } from "@/components/skills-section"
+import { ContactForm } from "@/components/contact-form"
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <main>
       <HeroSection />
+      <AboutSection />
       <ProjectShowcase />
       <SkillsSection />
       <ContactForm />
-    </div>
+    </main>
   )
 }
