@@ -1,5 +1,8 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { TypeAnimation } from 'react-type-animation'
+import Link from 'next/link'
 
 export function HeroSection() {
   return (
@@ -22,8 +25,12 @@ export function HeroSection() {
         repeat={Infinity}
       />
       <div className="flex space-x-4">
-        <Button variant="default">View Projects</Button>
-        <Button variant="outline">Download CV</Button>
+        <Link href="#projects">
+          <Button variant="default">View Projects</Button>
+        </Link>
+        <Button variant="outline" onClick={() => window.open('/resume.pdf', '_blank')}>
+          Download CV
+        </Button>
       </div>
     </section>
   )

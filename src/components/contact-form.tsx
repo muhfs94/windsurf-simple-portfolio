@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import { Button } from '@/components/ui/button';
+
 
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
